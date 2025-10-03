@@ -30,7 +30,7 @@ namespace Products_Management
                 options.AddPolicy("AllowReactApp",
                     policy =>
                     {
-                        policy.WithOrigins("http://localhost:3000")
+                        policy.WithOrigins("http://localhost:3000","https://asignment1-frontend.vercel.app")
                               .AllowAnyHeader()
                               .AllowAnyMethod();
                     });
